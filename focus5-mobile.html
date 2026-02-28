@@ -996,7 +996,7 @@ const firebaseConfig = {
     detailHvm = task.hvm || false;
 
     const inToday = data.todayTasks.some(t => t.id === id);
-    document.getElementById('detailSheetLabel').textContent = inToday ? 'Today's Task' : 'Backlog Task';
+    document.getElementById('detailSheetLabel').textContent = inToday ? "Today's Task" : 'Backlog Task';
     document.getElementById('detailTitle').value = task.title;
     document.getElementById('detailDue').value = task.dueDate || '';
     document.getElementById('detailHvmToggle').classList.toggle('active', detailHvm);
